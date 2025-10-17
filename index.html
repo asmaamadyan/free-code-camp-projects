@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey</title>
+</head>
+<body>
+ 
+  <h1>Customer Satisfaction Survey</h1>
+    <p id="description" class="description center">Thank you for taking the time to fill out this form. </p>
+    <form>
+   <div class="form">
+
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+  </div>
+
+   <div class="form">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+  </div>
+ <div class="form">
+    <label for="satisfaction">How satisfied are you with our service?</label><br>
+    <select id="satisfaction" name="satisfaction" required>
+      <option value="">Select</option>
+      <option value="very_satisfied">Very Satisfied</option>
+      <option value="satisfied">Satisfied</option>
+      <option value="neutral">Neutral</option>
+      <option value="dissatisfied">Dissatisfied</option>
+      <option value="very_dissatisfied">Very Dissatisfied</option>
+    </select>
+  </div>
+ <div class="form">
+
+    <label>Would you recommend our company to a friend?</label>
+    <label><input name="would you" type="radio" class="inline"value="1" checked/>Definitely</label>
+    <label><input value="2"name="would you" type="radio"class="inline"/>Maybe</label>
+    <label><input value="3"name="would you" type="radio" class="inline"/>Not sure</label>
+  </div>
+ <div class="form">
+
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+  </div>
+
+    <button type="submit" value="Submit">Submit</button>
+  </form>
+</body>
+</html>
